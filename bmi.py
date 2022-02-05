@@ -1,5 +1,15 @@
 # My solution to the question from week 2
 # Author: Ruairi McCool
 
-height = input("Enter height in cm: ")
-weight = input("Enter weight in kg: ")
+
+height = int(input("Enter height in cm: "))
+weight = int(input("Enter weight in kg: "))
+
+# How body mass index is calculated
+Body_Mass_Index = weight / (height)**2
+
+# Height is needed in meters so diving height by one hundred
+BMI = weight / (height/100) ** 2
+result = BMI
+print("The BMI is {} kg/m2".format(result))
+print("The BMI is {} kg/m2".format(result))
