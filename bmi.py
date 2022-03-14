@@ -13,5 +13,4 @@ BMI = weight / (height/100) ** 2
 result = BMI
 
 # String format() method 
-print("The BMI is {} kg/m2".format(result))
-print("The BMI is {} kg/m2".format(result))
+print("The BMI is {:.2f} kg/m2".format(result))

@@ -3,11 +3,11 @@
 
 # Author: Ruairi McCool
 
-x = input("Please enter a sentence: ")
+letters = input("Please enter a sentence: ")
 # Slice take in three values - start, stop, step. A negative step number allows
 # you to count from the end of a string to the beginning.
 # A colon denotes the entire string.
-y = x[::-2]
-print(y)
+newString = letters[::-2]
+print(newString)
 
 
