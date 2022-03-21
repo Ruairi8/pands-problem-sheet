@@ -12,7 +12,7 @@ def h(x):
 
 # np.arange returns evenly spaced values within a given interval. https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange
 x1 = np.arange(0, 4, 1)
-plt.plot(f(x1), g(x1), h(x1))
+plt.plot(f(x1), 'y', g(x1), 'b', h(x1), 'r')
 plt.xticks(np.arange(0, 4, 1))
 plt.axis(xmin = 0, xmax = 4, ymin = 0, ymax = 30) # https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
 plt.ylabel('f(x) = x ' + '\ng(x) = x2 ' + '\nh(x) = x3')

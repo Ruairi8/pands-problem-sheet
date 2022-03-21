@@ -15,6 +15,7 @@ if num < 0:
 def sqrt(num):
     sqrt1 = 0.5 * num
     sqrt2 = 0.5 * (sqrt1 + num/sqrt1)
+    # Could become an infinite loop!
     while abs(sqrt1 -sqrt2) > 0.001:
         sqrt2 = 0.5 * (sqrt1 + num/sqrt1)
     return sqrt2

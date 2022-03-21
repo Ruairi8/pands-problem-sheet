@@ -2,8 +2,16 @@
 # Author: Ruairi McCool
 
 import sys
-print(sys.argv)
-with open(sys.argv[0]) as f:
-    for x in f:
-        x = x.count('e')
-        print(x)
+
+a = 0
+with open(sys.argv[1], "rt") as f:
+    for line in f:
+        words = line.split()
+        for i in words:
+            for letter in i:
+                if (letter == 'e'):
+                    a += 1
+# Print statement should not be inside the for or if loops if we want to output a single value. Otherwise,
+# there will be an output for the number of 'e's in each line for example, before it outputs the total for
+# the file.
+    print(a)
