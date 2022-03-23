@@ -1,5 +1,8 @@
-# A program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+# A program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the 
+# one set of axes.
 
+from cProfile import label
+from matplotlib import markers
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -10,10 +13,21 @@ def g(x):
 def h(x):
     return x ** 3
 
-# np.arange returns evenly spaced values within a given interval. https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange
+# np.arange returns evenly spaced values within a given interval using a certain stepsize.
+# https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange
 x1 = np.arange(0, 4, 1)
-plt.plot(f(x1), 'y', g(x1), 'b', h(x1), 'r')
+# Assigning colors y=yellow, b=blue, r=red to the graph lines.
+plt.plot(f(x1), 'y', linewidth=2.5, marker="d", label='f(x1)')
+plt.plot(g(x1), 'b', linewidth=2.5, marker="d", label="g(x1)")
+plt.plot(h(x1), 'r', linewidth=2.5, marker="d", label="h(x1)")
+plt.legend(loc="upper left")
+plt.title("plottask.py")
+# Ticks distribution on x-axis.
 plt.xticks(np.arange(0, 4, 1))
-plt.axis(xmin = 0, xmax = 4, ymin = 0, ymax = 30) # https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
+plt.grid(True)
+# Minimum & maximum ticks on x and y axes.
+plt.axis(xmin = 0, xmax = 3.1, ymin = 0, ymax = 28) # https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
+# Giving the y-axis labels for each line plot.
 plt.ylabel('f(x) = x ' + '\ng(x) = x2 ' + '\nh(x) = x3')
+# Nothing will output when this program is run without using .show().
 plt.show()

@@ -3,8 +3,10 @@
 
 import sys
 
+filename = sys.argv[1]
 a = 0
-with open(sys.argv[1], "rt") as f:
+# "rt" is used to specify reading a text. 
+with open(filename, "rt") as f:
     for line in f:
         words = line.split()
         for i in words:
