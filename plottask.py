@@ -1,6 +1,9 @@
 # A program that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the 
 # one set of axes.
+# Author: Ruairi McCool
 
+# Paramters label and markers must be imported from cProfile and matplotlib. Matplotlib.pyplot is a useful 
+# tool for outputting graphs:
 from cProfile import label
 from matplotlib import markers
 import matplotlib.pyplot as plt
@@ -26,7 +29,8 @@ plt.title("plottask.py")
 plt.xticks(np.arange(0, 4, 1))
 plt.grid(True)
 # Minimum & maximum ticks on x and y axes.
-plt.axis(xmin = 0, xmax = 3.1, ymin = 0, ymax = 28) # https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
+# https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
+plt.axis(xmin = 0, xmax = 3.1, ymin = 0, ymax = 28) 
 # Giving the y-axis labels for each line plot.
 plt.ylabel('f(x) = x ' + '\ng(x) = x2 ' + '\nh(x) = x3')
 # Nothing will output when this program is run without using .show().

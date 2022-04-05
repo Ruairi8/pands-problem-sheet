@@ -10,7 +10,7 @@ weight = int(input("Enter weight in kg: "))
 Body_Mass_Index = weight / (height) ** 2
 
 # Height is needed in meters so dividing height by one hundred. Also setting the formula equal to a variable (BMI).
-# Then storing the variable in 'result'.
+# Then storing the variable in 'result' by using a comparator operator equal sign:
 BMI = weight / (height/100) ** 2
 result = BMI
 

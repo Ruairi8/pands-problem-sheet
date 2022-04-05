@@ -8,6 +8,7 @@ def collatz_sequence(x):
 # the array.
     arr = []
     if x < 1:
+# 'return' here sends an empty array back to the caller.
        return []
     while x > 1:
 # Matching indentation levels are part of the same block of code. Python follows "off-side" rule convention.
@@ -15,10 +16,13 @@ def collatz_sequence(x):
 # level. 
 # https://realpython.com/python-conditional-statements/#python-its-all-about-the-indentation
        if x % 2 == 0:
+# 'if-else statement'. When if is true, the indented line is executed on the next line, otherwise the indented
+# line under 'else:' is executed.
          x = x / 2
        else:
          x = 3 * x + 1 
-       arr.append(x)    
+       arr.append(x)  
+# Return statement to return the resulting array back to the caller.  
     return arr
 
 user = int(input("Enter number: "))
