@@ -1,13 +1,17 @@
 # A program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line
 # Author: Ruairi McCool
 
+# https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python
 import sys
 
+# 'sys.argv[1]' will be the first argument in the command line, argv[0] is not used here because it is always
+# the Python filename:
 filename = sys.argv[1]
 a = 0
-# "rt" is used to specify reading a text. "with open" is used to read/write in a file.
+# https://www.sanfoundry.com/python-program-read-file-counts-number/
+# "rt" is used to specify reading a text. "with open" is used to read/write in a file:
 with open(filename, "rt") as f:
-# Breaking down the text into separate lines:
+# This will break down the text in the file (f) into separate lines:
     for line in f:
 # Separating each word in each line using .split() method. Indentation used because the words are 'in' the lines:
         words = line.split()

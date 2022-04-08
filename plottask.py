@@ -2,13 +2,17 @@
 # one set of axes.
 # Author: Ruairi McCool
 
-# Paramters label and markers must be imported from cProfile and matplotlib. Matplotlib.pyplot is a useful 
-# tool for outputting graphs:
+# Parameters 'label' and 'markers' must be imported from cProfile and matplotlib. Matplotlib.pyplot is a useful 
+# tool for outputting graphs. There are many functions contained with it that can be used to change style or 
+# type of an output. 'Numpy' is a library consisting of multidimensional array objects, and a collection of
+# routines for processing those arrays. Numpy allows you to use maths and logical operations on arrays. The 'as'
+# keyword allows you to create a shorter psuedoname. https://www.mygreatlearning.com/blog/python-numpy-tutorial/:
 from cProfile import label
 from matplotlib import markers
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Defining three functions, with x as a parameter.
 def f(x):
     return x
 def g(x):

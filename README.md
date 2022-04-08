@@ -48,12 +48,13 @@
 6. A program that counts the number of 'e's in a file.
 - This was a new area of Python that explored reading and writing to a file and using the built-in os module
 - to allow the user to output what is in a file from a command line.
-- 
-
+- https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python
+- https://www.sanfoundry.com/python-program-read-file-counts-number/
 
 7. A program that displays a line graph of three different functions.
 - This involved exploring an area of Python used to get graphical outputs and using different Python syntax
 - and methods on the built-in mathplotlib.pyplot module to adjust the line graph.
 
+- https://www.mygreatlearning.com/blog/python-numpy-tutorial/
 - https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange
 - https://towardsdatascience.com/plot-in-python-with-matplotlib-step-by-step-dd69f2e9175a
