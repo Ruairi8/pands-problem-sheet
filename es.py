@@ -20,7 +20,7 @@ with open(filename, "rt") as f:
         for i in words:
             for letter in i:
                 if (letter == 'e'):
-# a += 1 is the equivalent of  a = a + 1. This will add 1 to a for every letter that is an e in the file.
+# a += 1 is the equivalent of  a = a + 1. This will add 1 to a for every letter that is an e in the file:
                     a += 1
 # Print statement should not be inside the for or if loops if we want to output a single value. Otherwise,
 # there will be an output for the number of 'e's in each line for example, before it outputs the total for

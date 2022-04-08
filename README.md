@@ -51,6 +51,7 @@
 - https://askubuntu.com/questions/1059579/input-the-filename-in-the-commandline-as-an-argument-in-python
 - https://www.sanfoundry.com/python-program-read-file-counts-number/
 
+
 7. A program that displays a line graph of three different functions.
 - This involved exploring an area of Python used to get graphical outputs and using different Python syntax
 - and methods on the built-in mathplotlib.pyplot module to adjust the line graph.
